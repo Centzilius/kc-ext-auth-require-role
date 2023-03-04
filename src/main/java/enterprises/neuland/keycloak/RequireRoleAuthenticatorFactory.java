@@ -7,6 +7,7 @@ import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 
+import java.util.Collections;
 import java.util.List;
 
 public class RequireRoleAuthenticatorFactory implements AuthenticatorFactory {
@@ -28,7 +29,7 @@ public class RequireRoleAuthenticatorFactory implements AuthenticatorFactory {
         return false;
     }
 
-    public static final AuthenticationExecutionModel.Requirement[] REQUIREMENT_CHOICES = {
+    protected static final AuthenticationExecutionModel.Requirement[] REQUIREMENT_CHOICES = {
             AuthenticationExecutionModel.Requirement.REQUIRED, AuthenticationExecutionModel.Requirement.DISABLED
     };
 
@@ -49,7 +50,7 @@ public class RequireRoleAuthenticatorFactory implements AuthenticatorFactory {
 
     @Override
     public List<ProviderConfigProperty> getConfigProperties() {
-        return null;
+        return Collections.emptyList();
     }
 
     @Override
