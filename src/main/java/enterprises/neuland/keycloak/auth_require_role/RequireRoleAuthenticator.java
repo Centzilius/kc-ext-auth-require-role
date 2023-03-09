@@ -1,4 +1,4 @@
-package enterprises.neuland.keycloak;
+package enterprises.neuland.keycloak.auth_require_role;
 
 import org.keycloak.authentication.AuthenticationFlowContext;
 import org.keycloak.authentication.Authenticator;

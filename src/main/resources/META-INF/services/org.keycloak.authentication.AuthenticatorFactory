@@ -1,2 +1,2 @@
-enterprises.neuland.keycloak.RequireRoleAuthenticatorFactory
-enterprises.neuland.keycloak.RequireRoleDirectGrantAuthenticatorFactory
+enterprises.neuland.keycloak.auth_require_role.RequireRoleAuthenticatorFactory
+enterprises.neuland.keycloak.auth_require_role.RequireRoleDirectGrantAuthenticatorFactory
